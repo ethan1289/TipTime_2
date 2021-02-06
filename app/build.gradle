@@ -12,6 +12,9 @@ android {
     }
 
     defaultConfig {
+        //Support older android version api level 21 lower
+        vectorDrawables.useSupportLibrary = true
+
         applicationId "com.example.tiptime1"
         minSdkVersion 19
         targetSdkVersion 30
@@ -19,6 +22,8 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
     }
 
     buildTypes {
